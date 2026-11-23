@@ -16,6 +16,7 @@ network:
   allowed:
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 engine:
   id: copilot
   copilot-sdk: true
@@ -30,12 +31,13 @@ safe-outputs:
 
 Read `notes/mona-notes.md` and the current `site/content/github-info.md` before editing. Treat Mona's notes as the editorial requirements and preserve existing useful content.
 
-Use web fetch to read both:
+Use web fetch to read:
 
 - https://github.blog/latest/
 - https://github.blog/changelog/
+- https://awesome-copilot.github.com/workflows/
 
-Select up to three recent, useful, non-duplicate updates that help developers learn GitHub faster or fit the page's current themes. Only state facts supported by those pages. Keep each entry short and practical, and include its publication date and a direct link to its GitHub Blog or Changelog source.
+Select up to three recent, useful, non-duplicate updates that help developers learn GitHub faster or fit the page's current themes. Only state facts supported by those pages. Keep each entry short and practical, and include its publication date and a direct link to its GitHub Blog, Changelog, or Awesome Copilot workflow source.
 
 Update only `site/content/github-info.md`, keeping its current structure and editorial angle. If there are no relevant new updates, the source pages cannot be read, or the evidence is insufficient, make no changes and call `noop` with a brief reason.
 
